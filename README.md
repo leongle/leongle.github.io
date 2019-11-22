@@ -1,2 +1,3 @@
 # leongle.github.io
-future blog
+
+A place for note leon's github programer life.
