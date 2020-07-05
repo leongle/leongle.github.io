@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: http://blog.upmesh.cn/sitemap.xml
+Sitemap: http://leongle.github.io/sitemap.xml

@@ -1,20 +1,20 @@
-<?xml-stylesheet type="text/xsl" href="http://blog.upmesh.cn/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="http://leongle.github.io/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://blog.upmesh.cn/categories/</loc>
+    <loc>http://leongle.github.io/categories/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://blog.upmesh.cn/</loc>
+    <loc>http://leongle.github.io/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://blog.upmesh.cn/tags/</loc>
+    <loc>http://leongle.github.io/tags/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
