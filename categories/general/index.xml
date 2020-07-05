@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>General on Even - A super concise theme for Hugo</title>
+    <link>http://leongle.github.io/categories/general/</link>
+    <description>Recent content in General on Even - A super concise theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 04 Dec 2019 14:56:05 +0800</lastBuildDate>
+    
+	<atom:link href="http://leongle.github.io/categories/general/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ASCII_Character_Map</title>
+      <link>http://leongle.github.io/post/ascii_character_map/</link>
+      <pubDate>Wed, 04 Dec 2019 14:56:05 +0800</pubDate>
+      
+      <guid>http://leongle.github.io/post/ascii_character_map/</guid>
+      <description>ASCII码字符对照表 1、ASCII 打印字符 数字 32–126 分配给了能在键盘上找到的字符，当您查看或打印文档时就会出现。 注：十进制32代表空</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>kv-dict - Even - A super concise theme for Hugo</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Leon" /><meta name="description" content="主要记录了UPMesh中的关键键值对及取值解释。 应答码 100以内应答码由服务网格定义使用，100到255之间应答码由应用可选使用，服务网格目" /><meta name="keywords" content="Hugo, theme, even, Leon, UPMesh, ServiceMesh" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.73.0 with theme even" />
+
+
+<link rel="canonical" href="http://leongle.github.io/post/kv-dict/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<link href="/sass/main.min.8c3cbcb0324c2bb4875ceccba4007cbad4b4ac8377f33af9953c3e7684534a50.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="kv-dict" />
+<meta property="og:description" content="主要记录了UPMesh中的关键键值对及取值解释。 应答码 100以内应答码由服务网格定义使用，100到255之间应答码由应用可选使用，服务网格目" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://leongle.github.io/post/kv-dict/" />
+<meta property="article:published_time" content="2019-11-01T13:14:02+08:00" />
+<meta property="article:modified_time" content="2019-11-01T13:14:02+08:00" />
+<meta itemprop="name" content="kv-dict">
+<meta itemprop="description" content="主要记录了UPMesh中的关键键值对及取值解释。 应答码 100以内应答码由服务网格定义使用，100到255之间应答码由应用可选使用，服务网格目">
+<meta itemprop="datePublished" content="2019-11-01T13:14:02&#43;08:00" />
+<meta itemprop="dateModified" content="2019-11-01T13:14:02&#43;08:00" />
+<meta itemprop="wordCount" content="823">
+
+
+
+<meta itemprop="keywords" content="UPMesh," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="kv-dict"/>
+<meta name="twitter:description" content="主要记录了UPMesh中的关键键值对及取值解释。 应答码 100以内应答码由服务网格定义使用，100到255之间应答码由应用可选使用，服务网格目"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">UPMesh Notes</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">UPMesh Notes</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">kv-dict</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2019-11-01 </span>
+        <div class="post-category">
+            <a href="/categories/service-mesh/"> Service Mesh </a>
+            </div>
+          <span class="more-meta"> 823 words </span>
+          <span class="more-meta"> 2 mins read </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> times read </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#watch_dogs接口">watch_dogs接口</a></li>
+    <li><a href="#事件码规则">事件码规则</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>主要记录了UPMesh中的关键键值对及取值解释。</p>
+<h1 id="应答码">应答码</h1>
+<p>100以内应答码由服务网格定义使用，100到255之间应答码由应用可选使用，服务网格目前定义的应答码如下：</p>
+<table>
+<thead>
+<tr>
+<th>应答码HEX</th>
+<th>应答码DEC</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x00</td>
+<td>00</td>
+<td>成功</td>
+</tr>
+<tr>
+<td>0x30</td>
+<td>48</td>
+<td>无可用服务节点</td>
+</tr>
+<tr>
+<td>0x31</td>
+<td>49</td>
+<td>通讯链路不可用（app&lt;&ndash;&gt;mproxy）</td>
+</tr>
+<tr>
+<td>0x32</td>
+<td>50</td>
+<td>无调用权限</td>
+</tr>
+<tr>
+<td>0x33</td>
+<td>51</td>
+<td>指定路由非法</td>
+</tr>
+<tr>
+<td>0x34</td>
+<td>52</td>
+<td>SDK调用参数错误</td>
+</tr>
+<tr>
+<td>0x40</td>
+<td>64</td>
+<td>未订阅指定服务</td>
+</tr>
+<tr>
+<td>0x41</td>
+<td>65</td>
+<td>协议头格式错误</td>
+</tr>
+<tr>
+<td>0x50</td>
+<td>80</td>
+<td>系统异常（无法归类时提供）</td>
+</tr>
+<tr>
+<td>0x51</td>
+<td>81</td>
+<td>服务停用（兼容magpie）</td>
+</tr>
+<tr>
+<td>0x52</td>
+<td>82</td>
+<td>调用超时</td>
+</tr>
+<tr>
+<td>0x53</td>
+<td>83</td>
+<td>流量控制</td>
+</tr>
+</tbody>
+</table>
+<h1 id="logid生成规则">LOGID生成规则</h1>
+<p>UPMesh各模块logid生成规则 ：前缀(3位子系统代码+1位保留)+时间戳mmddHHMMSS（10位）+序号（8位）</p>
+<table>
+<thead>
+<tr>
+<th>logid前缀</th>
+<th>模块</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>USM0</td>
+<td>console</td>
+</tr>
+<tr>
+<td>USM0</td>
+<td>pilot(ROOT CU)</td>
+</tr>
+<tr>
+<td>USM0</td>
+<td>pilot(CU)</td>
+</tr>
+<tr>
+<td>USM0</td>
+<td>mixer</td>
+</tr>
+<tr>
+<td>USM0</td>
+<td>monitor</td>
+</tr>
+<tr>
+<td>USM0</td>
+<td>magent</td>
+</tr>
+<tr>
+<td>USM0</td>
+<td>mproxy</td>
+</tr>
+<tr>
+<td>USM0</td>
+<td>meshctl</td>
+</tr>
+</tbody>
+</table>
+<h1 id="ump告警">UMP告警</h1>
+<h2 id="watch_dogs接口">watch_dogs接口</h2>
+<p>UPMesh各模块目前通过mixer的watch_dogs接口和UMP系统进行对接，各字段取值说明如下：</p>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>字段含义</th>
+<th>格式或说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cmd</td>
+<td>命令字</td>
+<td>固定填写 watch_dogs</td>
+</tr>
+<tr>
+<td>role</td>
+<td>角色</td>
+<td>复合结构，所有和mixer交互的接口都会有这个字段</td>
+</tr>
+<tr>
+<td>level</td>
+<td>告警级别</td>
+<td>通常有FATAL/ERROR级别，WARN/INFO/DEBUG通常不出现</td>
+</tr>
+<tr>
+<td>system</td>
+<td>系统代码</td>
+<td>向Zdogs的申请的系统代码，不超过5个字，UPMesh为 UPSM</td>
+</tr>
+<tr>
+<td>subsystem</td>
+<td>子系统码</td>
+<td>自定义的子系统代码，不超过5个字，建议的子系统 PILOT/MIXER/MON/CON/SC</td>
+</tr>
+<tr>
+<td>module</td>
+<td>模块代码</td>
+<td>自定义的模块代码，不超过3个字节，建议的模块代码 PLT/MIX/MON/CON/AGT/PRX</td>
+</tr>
+<tr>
+<td>code</td>
+<td>事件码</td>
+<td>自定义的事件码，不超过4个字节，取值见3.2节说明</td>
+</tr>
+<tr>
+<td>msg</td>
+<td>告警内容</td>
+<td>UMP告警内容，参见3.3节说明</td>
+</tr>
+<tr>
+<td>fileName</td>
+<td>文件名</td>
+<td>告警来自哪个代码文件， 不超过25个字节</td>
+</tr>
+<tr>
+<td>function</td>
+<td>函数名</td>
+<td>告警来自哪个函数， 不超过24个字节</td>
+</tr>
+<tr>
+<td>lineNo</td>
+<td>代码行号</td>
+<td>告警来自代码文件的哪一行， 不超过6个字节</td>
+</tr>
+</tbody>
+</table>
+<h2 id="事件码规则">事件码规则</h2>
+<p>事件码总长4个字节，采用1字节大类+1字节小类+2字节序号的编码规则。</p>
+<p>大类用于区分不同的应用模块，分类规则如下：</p>
+<table>
+<thead>
+<tr>
+<th>大类</th>
+<th>模块</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C</td>
+<td>console</td>
+</tr>
+<tr>
+<td>P</td>
+<td>pilot</td>
+</tr>
+<tr>
+<td>M</td>
+<td>mixer</td>
+</tr>
+<tr>
+<td>A</td>
+<td>magent</td>
+</tr>
+<tr>
+<td>X</td>
+<td>mproxy</td>
+</tr>
+<tr>
+<td>N</td>
+<td>monitor</td>
+</tr>
+</tbody>
+</table>
+<p>小类用于区不同的事件对象，规则如下：</p>
+<table>
+<thead>
+<tr>
+<th>小类</th>
+<th>事件对象</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>数据库相关</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Redis相关</td>
+</tr>
+<tr>
+<td>3</td>
+<td>网络相关</td>
+</tr>
+<tr>
+<td>4</td>
+<td>其他未归类</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">Leon</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2019-11-01
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/upmesh/">UPMesh</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/blogroll/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Blogroll</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:leongle@163.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/leongle" class="iconfont icon-github" title="github"></a>
+  <a href="http://leongle.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> site pv: <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> site uv: <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2019 - 
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">Leon</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.d7b7ada643c9c1a983026e177f141f7363b4640d619caf01d8831a6718cd44ea.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

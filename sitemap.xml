@@ -2,19 +2,92 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://leongle.github.io/about/</loc>
+    <lastmod>2019-12-21T16:19:09+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://leongle.github.io/post/ascii_character_map/</loc>
+    <lastmod>2019-12-04T14:56:05+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://leongle.github.io/categories/</loc>
+    <lastmod>2019-12-04T14:56:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://leongle.github.io/</loc>
+    <lastmod>2019-12-04T14:56:05+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://leongle.github.io/categories/general/</loc>
+    <lastmod>2019-12-04T14:56:05+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://leongle.github.io/tags/knowledge/</loc>
+    <lastmod>2019-12-04T14:56:05+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://leongle.github.io/post/</loc>
+    <lastmod>2019-12-04T14:56:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://leongle.github.io/tags/</loc>
+    <lastmod>2019-12-04T14:56:05+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://leongle.github.io/post/blogroll/</loc>
+    <lastmod>2019-11-25T10:20:27+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://leongle.github.io/tags/link/</loc>
+    <lastmod>2019-11-25T10:20:27+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://leongle.github.io/categories/service-mesh/</loc>
+    <lastmod>2019-11-25T10:20:27+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://leongle.github.io/post/kv-dict/</loc>
+    <lastmod>2019-11-01T13:14:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://leongle.github.io/tags/upmesh/</loc>
+    <lastmod>2019-11-01T13:14:02+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
